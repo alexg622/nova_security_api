@@ -2,7 +2,7 @@
 
 Going to a user's or team's url without an email, id, or auth_token will result in a 403 status code.\
 https://novasecurity.herokuapp.com/api/teams/1 \
-https://novasecurity.herokuapp.com/api/users 
+https://novasecurity.herokuapp.com/api/users
 
 
 Getting user credentials without a registered email will create a new user, as well as an auth token for the user. You will get back the user's email, id, and token only the first time. Visiting the page again after that will only give you back the users email and id. \
@@ -36,7 +36,4 @@ Every object also has timestamps for when they were created and last updated.
 
 Some problems with storing the session token locally could be if someone uses that person's computer
 they will be able to access the token without credentials. Usually you can logout to clear the token, but
-in this case the user has no way of clearing the token other than requesting data with a new email. If something is
-stored locally on localStorage it is also pretty easy to see which doesn't make it that secure. This would be a lot
-more secure if a user had to enter a password to create an account and get their token, and then I could verify
-everything through that.
+in this case the user has no way of clearing the token other than requesting data with a new email, or clearing their cookies. If something is stored locally on localStorage it is also pretty easy to see which doesn't make it that secure. This would be a lot more secure if a user had to enter a password to create an account and get their token, and then I could verify everything through that.
