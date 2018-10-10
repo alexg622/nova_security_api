@@ -2,7 +2,7 @@
 
 Going to a user's or team's url without an email, id, or auth_token will result in a 403 status code.\
 https://novasecurity.herokuapp.com/api/teams/1 \
-https://novasecurity.herokuapp.com/api/users
+https://novasecurity.herokuapp.com/api/users \
 
 
 Getting user credentials without a registered email will create a new user, as well as an auth token for the user. You will get back the user's email, id, and token only the first time. Visiting the page again after that will only give you back the users email and id. \
