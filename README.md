@@ -1,3 +1,5 @@
+# nova_security_api
+
 Going to a user's or team's url without an email, id, or auth_token will result in a 403 status code.\
 http://localhost:3000/api/teams/1 \
 http://localhost:3000/api/users
@@ -38,4 +40,3 @@ in this case the user has no way of clearing the token other than requesting dat
 stored locally on localStorage it is also pretty easy to see which doesn't make it that secure. This would be a lot
 more secure if a user had to enter a password to create an account and get their token, and then I could verify
 everything through that.
-# nova_security_api
