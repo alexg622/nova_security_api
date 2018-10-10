@@ -28,7 +28,7 @@ https://novasecurity.herokuapp.com/api/teams/1?email=alex@mail.com
 
 
 If you are part of the team you can also update the teams name. \
-`curl -X PUT -d name=Nike https://novasecurity.herokuapp.com/api/teams/1?email=alex@mail.com`
+`curl -X PUT -d name=ATeam https://novasecurity.herokuapp.com/api/teams/1?email=alex@mail.com`
 
 
 Every object also has timestamps for when they were created and last updated.
